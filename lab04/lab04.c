@@ -9,12 +9,17 @@
  
  
  if (k > m)
-     if (k > n) printf("Max number: %d \n", k);
-     else printf("Max number: %d \n", n);
- else
-     if (m > n) printf("Max number: %d \n", m);
-     else printf("Max number: %d \n", n);
-     
+     if (k > n) {
+     printf("Max number: %d \n", k);
+    } else {
+     printf("Max number: %d \n", n);
+ } else {
+     if (m > n) {
+     printf("Max number: %d \n", m);
+    } else {
+     printf("Max number: %d \n", n); 
+     }
+     }
         
  return 0;
 }
