@@ -1,0 +1,2 @@
+main.bin: lab04.c
+	$(CC) $(C_OPTS) $< -o ./lab04/$@
