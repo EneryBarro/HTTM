@@ -1,38 +1,17 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-unsigned int getNumOfVaidPairs(int quan, ...);
-unsigned int getNumOfVaidPairsVA(int quan, ...);
+unsigned int getNumOfValidPairs(int quan, ...);
 
 int main()
 {
-    printf("PTR : %d\n\n", getNumOfVaidPairs(5 /*quantity of numbers*/, 654, 912, 54, 8, 214));
-    printf("VA : %d\n\n", getNumOfVaidPairsVA(5 /*quantity of numbers*/, 654, 912, 54, 8, 214));
+    printf("Number of pairs: %d\n\n", getNumOfValidPairs(20 /*quantity of numbers*/, 851, 84, 4, 84, 531, 1, 4, 3, 9, 7, 5689, 1369, 666, 13, 6874, 541, 8745, 84, 456, 5465));
 
     return 0;
 }
 
-unsigned int getNumOfVaidPairs(int quan, ...)
-{
-    quan--;
 
-    unsigned int num = 0;
-
-
-
-    for (char *arg_ptr = (char *)&quan; quan > 0; quan--)
-    {
-        arg_ptr = arg_ptr + sizeof(int);
-        if (*arg_ptr < *(arg_ptr + sizeof(int)))
-            num++;
-    }
-
-
-
-    return num;
-}
-
-unsigned int getNumOfVaidPairsVA(int quan, ...)
+unsigned int getNumOfValidPairs(int quan, ...)
 {
     quan--;
 
@@ -56,7 +35,5 @@ unsigned int getNumOfVaidPairsVA(int quan, ...)
 
     return num;
 }
-
-
 
 
