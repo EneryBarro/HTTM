@@ -3,12 +3,13 @@ CC = gcc
 
 all: clean prep compile run
 
+main.bin: main.bin
 	gcc lab05.c -o main.bin
 
 clean:
 	rm -rf lab05
 prep:
-	
+
 compile: main.bin
 
 run: clean prep compile

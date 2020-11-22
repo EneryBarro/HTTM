@@ -11,8 +11,8 @@ int main()
 
 	for (int i = 0, _num = num; i < 6; i++)
 	{
-		if (i < 3)  rsum += _num % 10;
-		else   lsum += _num % 10;
+		if (i < 3)  (lsum += _num % 10);
+		else   (rsum += _num % 10);
 
 		_num /= 10;
 	}
