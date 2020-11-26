@@ -14,7 +14,6 @@ int main()
 
 unsigned int getNumberOfValidPairs(int quantity, ...)
 {
-    quantity--;
 
     unsigned int num = 0;
 
@@ -23,7 +22,7 @@ unsigned int getNumberOfValidPairs(int quantity, ...)
     va_list marker;
     va_start(marker, quantity);
 
-    for (int i = 0, tmp_1 = va_arg(marker, int), tmp_2; i < quantity; i++)
+    for (int i = 0, tmp_1 = va_arg(marker, int), tmp_2; i < quantity - 1; i++)
     {
         if (tmp_1 < (tmp_2 = va_arg(marker, int)))
             num++;
