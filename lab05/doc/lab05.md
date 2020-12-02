@@ -14,4 +14,4 @@
 
   * Функція `main`. Порівнює сумму лівої і правої частини 6-значного числа. Схема алгоритму функції:
 
- ![](/home/enerybarro/lab/lab05/doc/assets/block_shema.png)
+ ![block_shema](/home/enerybarro/lab/lab05/doc/assets/block_shema.png)
