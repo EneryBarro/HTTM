@@ -3,68 +3,65 @@
 
  int main()
 {
-    int chislo, sotni, desiatki, chisla, tusachi;
+    int number, hundreds, tens, numbers, thousands;
 
     printf("Please enter a number from 1 to 9999\n");
-    scanf("%d", &chislo);
+    scanf("%d", &number);
 
-    tusachi = chislo / 1000;
-    switch (tusachi)
+    thousands = number / 1000;
+    switch (thousands)
     {
-    case 1: printf("Odna Tysacha "); break;
-    case 2: printf("Dve Tysachi "); break;
-    case 3: printf("Tri Tysachi "); break;
-    case 4: printf("Chetire Tysach "); break;
-    case 5: printf("Piat Tysach "); break;
-    case 6: printf("Shest Tysach "); break;
-    case 7: printf("Sem Tysach "); break;
-    case 8: printf("Vosem Tysach "); break;
-    case 9: printf("Deviat Tysach "); break;
+    case 1: printf("One Thousand "); break;
+    case 2: printf("Two Thousand "); break;
+    case 3: printf("Tree Thousand "); break;
+    case 4: printf("Four Thousand "); break;
+    case 5: printf("Five Thousand "); break;
+    case 6: printf("Six Thousand "); break;
+    case 7: printf("Seven Thousand "); break;
+    case 8: printf("Eight Thousand "); break;
+    case 9: printf("Nine Thousand "); break;
     }
 
-    sotni = (chislo / 100) % 10;
-    switch (sotni)
+    hundreds = (number / 100) % 10;
+    switch (hundreds)
     {
-    case 1: printf("Sto "); break;
-    case 2: printf("Dvesti "); break;
-    case 3: printf("Trista "); break;
-    case 4: printf("Chetiresta "); break;
-    case 5: printf("Piatsot "); break;
-    case 6: printf("Shestsot "); break;
-    case 7: printf("Semsot "); break;
-    case 8: printf("Vosemsot "); break;
-    case 9: printf("Deviatsot "); break;
+    case 1: printf("One Hundred "); break;
+    case 2: printf("Two Hundred "); break;
+    case 3: printf("Three Hundred "); break;
+    case 4: printf("Four Hundred "); break;
+    case 5: printf("Five Hundred "); break;
+    case 6: printf("Six Hundred "); break;
+    case 7: printf("Seven Hundred "); break;
+    case 8: printf("Eight Hundred "); break;
+    case 9: printf("Nine Hundred "); break;
     }
 
-    desiatki = (chislo % 100) / 10;
-    switch (desiatki)
+    tens = (number % 100) / 10;
+    switch (tens)
     {
-    case 1: printf("Desiat "); break;
-    case 2: printf("Dvadcat "); break;
-    case 3: printf("Tridcat "); break;
-    case 4: printf("Sorok "); break;
-    case 5: printf("Piatdesiat "); break;
-    case 6: printf("Shestdesiat "); break;
-    case 7: printf("Semdesiat "); break;
-    case 8: printf("Vosemdesiat "); break;
-    case 9: printf("Devianosto "); break;
+    case 1: printf("Ten "); break;
+    case 2: printf("Twenty "); break;
+    case 3: printf("Thirty "); break;
+    case 4: printf("Forty "); break;
+    case 5: printf("Fifty "); break;
+    case 6: printf("Sixty "); break;
+    case 7: printf("Seventy "); break;
+    case 8: printf("Eighty "); break;
+    case 9: printf("Ninety "); break;
     }
 
-    chisla = (chislo % 100) % 10;
-    switch (chisla)
+    numbers = (number % 100) % 10;
+    switch (numbers)
     {
-    case 1: printf("Odin\n"); break;
-    case 2: printf("Dva\n"); break;
-    case 3: printf("Tri\n"); break;
-    case 4: printf("Chetire\n"); break;
-    case 5: printf("Piat\n"); break;
-    case 6: printf("Shest\n"); break;
-    case 7: printf("Sem\n"); break;
-    case 8: printf("Vosem\n"); break;
-    case 9: printf("Deviat\n"); break;
+    case 1: printf("One \n"); break;
+    case 2: printf("Two \n"); break;
+    case 3: printf("Tree \n"); break;
+    case 4: printf("Four \n"); break;
+    case 5: printf("Five \n"); break;
+    case 6: printf("Six \n"); break;
+    case 7: printf("Seven \n"); break;
+    case 8: printf("Eight \n"); break;
+    case 9: printf("Nine \n"); break;
     }
-    
     return 0;
 }
-
-

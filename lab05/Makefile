@@ -1,17 +1,21 @@
 targets = main.bin
 CC = gcc
+C_OPTS = -std=gnu11 -g -Wall -Wextra -Wformat-security -Wfloat-equal -Wshadow -Wconversion -Wlogical-not-parentheses -Wnull-dereference
 
 all: clean prep compile run
 
-main.bin: main.bin
-	gcc lab05.c -o main.bin
-
 clean:
-	rm -rf lab05
+	rm -rf dist
 prep:
-
+	mkdir dist
+format:
+	doxygen Doxyfile
 compile: main.bin
 
+main.bin: src/main.c
+	$(CC) $(C_OPTS) $< -o ./dist/$@
 run: clean prep compile
-	./main.bin
+	./dist/main.bin
+format: #TODO
 
+tidy: # TODO
