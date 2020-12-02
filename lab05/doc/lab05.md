@@ -68,6 +68,7 @@ int main()
 ```
 
 - Варіанти використання:
+
 Вписав 6-значне число, яке відповідає умові «щасливого» квитка.
 
  ![Primer_1](https://github.com/EneryBarro/HTTM/blob/main/lab05/doc/assets/Primer_1.png)
