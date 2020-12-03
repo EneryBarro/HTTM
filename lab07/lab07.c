@@ -5,7 +5,8 @@ unsigned int getNumberOfValidPairs(int quantity, ...);
 
 int main()
 {
-    printf("Number of pairs: %d\n\n", getNumberOfValidPairs(20 /*quantity of numbers*/, 851, 84, 4, 84, 
+ unsigned int getNumberOfValidPairs = 20;
+    printf("Number of pairs: %d\n\n",getNumberOfValidPairs,  851, 84, 4, 84, 
     531, 1, 4, 3, 9, 7, 5689, 1369, 666, 13, 6874, 541, 8745, 84, 456, 5465));
 
     return 0;
