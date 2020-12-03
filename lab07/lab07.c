@@ -2,10 +2,12 @@
 #include <stdarg.h>
 
 unsigned int getNumOfValidPairs(int quan, ...);
-
+ 
 int main()
 {
-    printf("Number of pairs: %d\n\n", getNumOfValidPairs(20 /*quantity of numbers*/, 851, 84, 4, 84, 531, 1, 4, 3, 9, 7, 5689, 1369, 666, 13, 6874, 541, 8745, 84, 456, 5465));
+    unsigned int quantity_of_numbers = 20;
+    unsigned int res = getNumOfValidPairs(quantity_of_numbers, 851, 84, 4, 84, 531, 1, 4, 3, 9, 7, 5689, 1369, 666, 13, 6874, 541, 8745, 84, 456, 5465);
+    printf("Number of pairs: %d\n\n", res);
 
     return 0;
 }
