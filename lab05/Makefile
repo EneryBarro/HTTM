@@ -16,6 +16,6 @@ main.bin: src/main.c
 	$(CC) $(C_OPTS) $< -o ./dist/$@
 run: clean prep compile
 	./dist/main.bin
-format: #TODO
+format: # TODO
 
 tidy: # TODO
