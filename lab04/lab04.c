@@ -5,7 +5,6 @@
  
  int k,m,n;
  
-    
  printf("Enter your numbers:\n");
  scanf("%d%d%d",&k,&m,&n);
  
